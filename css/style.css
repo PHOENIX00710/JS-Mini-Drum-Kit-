@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root{
+    --main-color:#f0f1f5;
+    --text-color: #c2113b;
+    --bg-color: #33384d;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0%;
+    font-size: 1.275rem;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 0.25rem;
+}
+
+#drum-kit{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+#w{
+    background-image: url(../images/tom1.png);
+}
+
+#a{
+    background-image: url(../images/tom2.png);
+}
+
+#s{
+    background-image: url(../images/tom3.png);
+}
+
+#d{
+    background-image: url(../images/tom4.png);
+}
+
+#j{
+    background-image: url(../images/kick.png);
+}
+
+#k{
+    background-image: url(../images/snare.png);
+}
+
+#l{
+    background-image: url(../images/crash.png);
+}
+
+#w,#a,#s,#d,#j,#k,#l{
+    overflow: hidden;
+    background-size: cover;
+}
+
+.drums{
+    padding: 1.05rem 1.05rem 0.5rem;
+    min-width: 20%;
+    background-color: var(--main-color);
+    font-size: 3rem;;
+    color: #000000;
+    border: 0.35rem solid #5d5d73;
+    border-radius: 0.25rem;
+}
+
+footer{
+    margin-top: 6rem;
+}
+
+@media (width > 600px) {
+    h1{
+        font-size: 4rem;
+    }
+}
+
+@media (width >900px){
+    .drums{
+        font-size: 5rem;
+        min-width: 7%;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    footer{
+        margin-top: 12rem;
+    }
+}
